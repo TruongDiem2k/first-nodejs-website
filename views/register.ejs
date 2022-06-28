@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../layout/head.ejs') %>
+
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>Register</h1>
+                    </div>
+                    <!-- for browser to know tha tthe form contains mutli media. will encripy multie media and send to server -->
+                    <form action="/users/register" method="POST" enctype="multipart/form-data">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                                <label>username</label>
+                                <input type="text" class="form-control" placeholder="username" id="username"
+                                    name="username">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                                <label>password</label>
+                                <input type="password" class="form-control" placeholder="password" id="password"
+                                    name="password">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
